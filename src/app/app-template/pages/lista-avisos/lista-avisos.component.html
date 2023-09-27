@@ -1,0 +1,254 @@
+<div class="backgroud-app">
+  <app-header></app-header>
+  <div class="container mx-auto relative mt-12 mb-12">
+    <div class="bg-white p-8 rounded-md w-full">
+      <div class=" flex items-center justify-between pb-6">
+        <div>
+          <h2 class="text-gray-600 font-semibold">Listado de Avisos</h2>
+          <span class="text-xs">Todos los resultados</span>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex bg-gray-50 items-center p-2 rounded-md">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd" />
+            </svg>
+            <input class="bg-gray-50 outline-none ml-1 block " type="text" name="" id="" placeholder="buscar...">
+          </div>
+          <div class="lg:ml-40 ml-10 space-x-8">
+            <button class="bg-azul_marino px-4 py-2 rounded-md text-white font-semibold tracking-wide cursor-pointer uppercase"><a routerLink="/avisos">crear nuevo aviso</a></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+          <div class="inline-block min-w-full shadow rounded-lg overflow-hidden">
+            <table class="min-w-full leading-normal">
+              <thead>
+                <tr>
+                  <th
+                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Folio
+                  </th>
+                  <th
+                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Nombres
+                  </th>
+                  <th
+                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Apellidos
+                  </th>
+                  <th
+                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Modo de atención
+                  </th>
+                  <th
+                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Archivo sin firmar
+                  </th>
+                  <th
+                    class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Archivo firmado
+                  </th>
+                  <th
+                  class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                    Última Fecha
+                </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="flex items-center">
+
+                      <div class="ml-3">
+                        <p class="text-gray-900 whitespace-no-wrap">
+                          #93258
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Roberto Jose
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Morales Pedraza
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Telefono
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <a href="" class="text-blue-600 font-medium">Descargar</a>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="w-72 px-3">
+                      <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-password" type="file" placeholder="">
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      23 septiembre 2023
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="flex items-center">
+
+                      <div class="ml-3">
+                        <p class="text-gray-900 whitespace-no-wrap">
+                          #93258
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Anónimo
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Anónimo
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Telefono
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <a href="" class="text-blue-600 font-medium">Descargar</a>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="w-72 px-3">
+                      <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-password" type="file" placeholder="">
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      05 agosto 2023
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="flex items-center">
+
+                      <div class="ml-3">
+                        <p class="text-gray-900 whitespace-no-wrap">
+                          #93258
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Matias Alberto
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Piñeda Salazar
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Telefono
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <a href="" class="text-blue-600 font-medium">Descargar</a>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="w-72 px-3">
+                      <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-password" type="file" placeholder="">
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      15 abril 2023
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="flex items-center">
+
+                      <div class="ml-3">
+                        <p class="text-gray-900 whitespace-no-wrap">
+                          #93258
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Maria Azucena
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Lopez Esparza
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      Telefono
+                    </p>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <a href="" class="text-blue-600 font-medium">Descargar</a>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <div class="w-72 px-3">
+                      <input
+                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="grid-password" type="file" placeholder="">
+                    </div>
+                  </td>
+                  <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <p class="text-gray-900 whitespace-no-wrap">
+                      21 abril 2023
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div
+              class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between          ">
+              <span class="text-xs xs:text-sm text-gray-900">
+                Mostrando 1 a 4 de 50 entradas
+              </span>
+              <div class="inline-flex mt-2 xs:mt-0">
+                <button
+                  class="text-sm text-indigo-50 transition duration-150 hover:bg-verde bg-azul_marino font-semibold py-2 px-4 rounded-l">
+                  Anterior
+                </button>
+                &nbsp; &nbsp;
+                <button
+                  class="text-sm text-indigo-50 transition duration-150 hover:bg-verde bg-azul_marino font-semibold py-2 px-4 rounded-r">
+                  Siguiente
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
